@@ -1,0 +1,23 @@
+footer {
+    height: 25vh;
+    color: whitesmoke;
+}
+
+.list {
+    list-style: none;
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.card-container {
+    cursor: pointer;
+}
+
+.displayedImg {
+    width: 60%;
+    height: 400px;
+}

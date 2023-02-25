@@ -1,0 +1,43 @@
+.news-title {
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: auto;
+    margin: auto;
+    width: 100%;
+    padding: 2%;
+    color: white;
+    background-color: rgba(14, 13, 13, 0.87); 
+}
+
+.news-list {
+    height: max-content;
+    margin: 0 2%;
+
+}
+
+.card {
+    height: 100%;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+.card h5 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.card img {
+    height: 250px;
+}
+
+.displayedNews {
+    margin: 2rem auto;
+    width: 80%;
+    text-align: justify;
+}
+
+.displayedImg {
+    margin: auto;
+}

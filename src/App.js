@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Navbar from './components/Navbar/Navbar'
+import NewsDataFetcher from './components/NewsList/NewsDataFetcher';
+import Footer from './components/Footer/Footer.js';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [category, setCategory] = React.useState('')
+    const [news, setNews] = React.useState(null)
+    const [displayedNews, setDisplayedNews] = React.useState(null)
+    const dataFetcherProps = {
+        category: category,
+        news: news,
+        displayedNews: displayedNews,
+        setNews: setNews,
+        setDisplayedNews: setDisplayedNews
+    }
+    return(
+        <div className="app bg-#f8f9fa">
+            <Navbar setCategory={setCategory} setDisplayedNews={setDisplayedNews}/>
+            <NewsDataFetcher data={dataFetcherProps}/>
+            <Footer /> 
+        </div>
+    )
 }
 
 export default App;
